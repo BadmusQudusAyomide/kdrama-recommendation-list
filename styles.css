@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e5ec;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e0e5ec;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 70%;
+    margin-right: 10px;
+    background-color: #e0e5ec;
+    box-shadow: inset 10px 10px 20px #bebebe, inset -10px -10px 20px #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #6f8db8;
+    box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #567295;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #e0e5ec;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+li.checked {
+    text-decoration: line-through;
+    background-color: #d3f8e2;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+label {
+    flex-grow: 1;
+    cursor: pointer;
+    color: #555;
+    font-size: 18px;
+}
+
+.delete-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #ff4c4c;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    input[type="text"] {
+        width: 60%;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    li {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .delete-btn {
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+/* Add this part to your existing CSS */
+.checkbox:checked + label {
+    color: #333;
+}
+
+.checkbox:checked + label::after {
+    content: ' ✔';
+    color: green;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Add this part to your existing CSS */
+.drama-label {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.drama-label:hover {
+    color: #333;
+}
