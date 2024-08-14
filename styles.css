@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e0e5ec;
+    background-color: #7d8899;
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #796060;
     margin-bottom: 20px;
 }
 
@@ -35,13 +35,13 @@ input[type="text"] {
     width: 70%;
     margin-right: 10px;
     background-color: #e0e5ec;
-    box-shadow: inset 10px 10px 20px #bebebe, inset -10px -10px 20px #ffffff;
+    box-shadow: inset 10px 10px 20px #dab5b5, inset -10px -10px 20px #ffffff;
 }
 
 button {
     padding: 10px 20px;
     font-size: 18px;
-    color: #fff;
+    color: #bba2a2;
     border: none;
     outline: none;
     border-radius: 30px;
